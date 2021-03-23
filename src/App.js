@@ -1,7 +1,14 @@
 import React from "react";
 
+import Container from "./components/layout/Container";
+import Home from "./views/Home";
+
 const App = () => {
-  return <h1>Hello World PWA</h1>;
+  return (
+    <Container>
+      <Home />
+    </Container>
+  );
 };
 
 export default App;
