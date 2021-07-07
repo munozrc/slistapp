@@ -1,7 +1,7 @@
 {
   "name": "shopping-list-app",
   "version": "0.0.1",
-  "homepage": "https://iamcarlosmunoz.github.io/shopping-list-app",
+  "homepage": "https://munozrc.github.io/shopping-list-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "5.12.0",
