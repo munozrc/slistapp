@@ -1,7 +1,11 @@
+import { Header } from "./header"
+import { ListProducts } from "./ListProducts"
+
 export const App = () => {
   return (
     <div>
-      <h1>Lista de compras</h1>
+      <Header />
+      <ListProducts />
     </div>
   )
 }
