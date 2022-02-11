@@ -5,7 +5,7 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 17px;
+  justify-content: space-between;
+  padding: 0 17px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.008), 0 8px 16px rgba(0, 0, 0, 0.008);
 }
