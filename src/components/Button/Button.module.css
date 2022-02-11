@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+}
+
+.flat {
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
