@@ -8,7 +8,7 @@ export const Header = () => {
       <Button>
         <BackIcon />
       </Button>
-      <h2>Inicio</h2>
+      <h2 className={styles.titleSection}>Nuevo producto</h2>
       <Button>
         <SettingsIcon />
       </Button>
