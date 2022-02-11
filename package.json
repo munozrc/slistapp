@@ -4,6 +4,7 @@
   "scripts": {
     "start": "npm run build && npm run serve",
     "dev": "vite",
+    "dev:expose": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "serve": "serve dist"
