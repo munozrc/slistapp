@@ -11,4 +11,5 @@
   line-height: 1;
   font-size: 1.5em;
   color: var(--text-color);
+  padding-bottom: 4px;
 }
