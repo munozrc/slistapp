@@ -8,9 +8,27 @@
   padding: 0;
 }
 
+:root {
+  --body-color: #FFF;
+  --box-color: #F5F5F5;
+}
+
 body {
+  align-items: center;
+  background-color: var(--body-color);
+  display: flex;
   height: 100vh;
+  justify-content: center;
   width: 100%;
+}
+
+#root {
+  aspect-ratio: 9/16;
+  background-color: var(--box-color);
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 8px 16px rgb(0, 0, 0, 0.08);
 }
 
 a {
@@ -28,4 +46,20 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  body {
+    display: inline-block;
+  }
+  
+  #root {
+    aspect-ratio: unset;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+    max-width: none;
+  }
+
 }
