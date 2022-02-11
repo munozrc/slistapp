@@ -3,8 +3,13 @@
 }
 
 .flat {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   justify-content: center;
   align-items: center;
+}
+
+.flat > svg {
+  font-size: 2.3em;
+  color: var(--text-color);
 }
