@@ -1,11 +1,13 @@
 import { Header } from "./header"
+import { useView } from "./hooks/useView"
 import { ListProducts } from "./ListProducts"
 
 export const App = () => {
+  const { view } = useView()
   return (
     <div>
       <Header />
-      <ListProducts />
+      { view === "HOME" && <ListProducts />}
     </div>
   )
 }
