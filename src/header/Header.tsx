@@ -4,15 +4,18 @@ import { useView } from "../hooks/useView"
 import styles from "./Header.module.css"
 
 export const Header = () => {
-  const { view } = useView()
+  const { view, changeView } = useView()
   return (
     <header className={styles.headerContainer}>
       { view !== "HOME" && (
-        <Button>
+        <Button onClick={() => changeView("HOME")}>
           <BackIcon />
         </Button>
       )}
-      <h2 className={styles.title}>Inicio</h2>
+      <h2 className={styles.title}>
+        {view === "HOME" && "Inicio"}
+        {view === "ADD_PRODUCT" && "Nuevo producto"}
+      </h2>
       <Button>
         <SettingsIcon />
       </Button>
