@@ -1,11 +1,10 @@
-import { ReactNode } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 import styles from './Button.module.css'
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>  {
   variant?: string
-  children: ReactNode
 }
 
-export const Button = ({ variant = 'flat', children }: ButtonProps) => {
-  return <button className={`${styles.btn} ${styles[variant]}`}>{children}</button>
+export const Button = ({ variant = 'flat', children, ...props }: ButtonProps) => {
+  return <button className={`${styles.btn} ${styles[variant]}`} {...props}>{children}</button>
 }

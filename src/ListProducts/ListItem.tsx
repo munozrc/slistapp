@@ -1,16 +1,16 @@
-import { ReactNode } from "react"
+import { ButtonHTMLAttributes, ReactNode } from "react"
 import styles from "./ListItem.module.css"
 
-interface ListItemProps {
+interface ListItemProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title?: string
   children?: ReactNode
 }
 
-export const ListItem = ({title, children}: ListItemProps) => {
+export const ListItem = ({title, children, ...props}: ListItemProps) => {
   return (
-    <article className={styles.listItemContainer}>
+    <button className={styles.listItemContainer} {...props}>
       {title && <h4>{title}</h4>}
       {children}
-    </article>
+    </button>
   )
 }
