@@ -1,7 +1,9 @@
+import styles from "./Product.module.css"
+
 export const Product = () => {
   return (
-    <section>
-      <h2>Nuevo Producto</h2>
+    <section className={styles.productContainer}>
+      <h3>Nuevo Producto</h3>
     </section>
   )
 }
