@@ -1,6 +1,6 @@
 import { Header } from "./header"
 import { useView } from "./hooks/useView"
-import { ListProducts } from "./listProducts"
+import { ListProducts } from "./list"
 import { Product } from "./product"
 
 export const App = () => {
