@@ -1,6 +1,6 @@
 import { createContext, Dispatch, FC, SetStateAction, useState } from 'react'
 
-export type VIEW = "HOME" | "ADD_PRODUCT" 
+export type VIEW = 'HOME' | 'ADD_PRODUCT'
 
 interface UI {
   view: VIEW
@@ -10,7 +10,7 @@ interface UI {
 export const UIContext = createContext({} as UI)
 
 export const UIContextProvider: FC = ({ children }) => {
-  const [view, setView] = useState<VIEW>("HOME")
+  const [view, setView] = useState<VIEW>('HOME')
   return (
     <UIContext.Provider value={{ view, setView }}>
       {children}

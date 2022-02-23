@@ -1,5 +1,6 @@
-import { useContext } from "react"
-import { UIContext, VIEW } from "../contexts/UIContext"
+import { useContext } from 'react'
+
+import { UIContext, VIEW } from '../contexts/UIContext'
 
 interface returnType {
   view: VIEW,

@@ -1,16 +1,18 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
+import { StrictMode } from 'react'
 import { registerSW } from 'virtual:pwa-register'
-import { App } from './App'
+
+import { App } from './app'
 import { UIContextProvider } from './contexts/UIContext'
+
 import './main.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <UIContextProvider>
       <App />
     </UIContextProvider>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 )
 
