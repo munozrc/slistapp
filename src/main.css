@@ -32,6 +32,7 @@ body {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 8px 16px rgb(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
 a {
