@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
-import { VIEWS } from '../../app/contexts'
-import { useView } from '../../app/hooks'
+import { VIEWS } from './contexts'
+import { useView } from './hooks'
 
 interface ViewProps {
   view: VIEWS

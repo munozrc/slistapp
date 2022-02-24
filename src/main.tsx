@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'
 import { registerSW } from 'virtual:pwa-register'
 
 import { UIContextProvider, VIEWS } from './app/contexts'
-import { View } from './components'
+import { View } from './app/view'
 import { ListProducts } from './list'
 import { Product } from './product'
 
