@@ -17,3 +17,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.header h2 {
+  line-height: 1.2;
+  font-size: 21px;
+}
+
+.start {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 26px;
+}
