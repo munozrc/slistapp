@@ -12,7 +12,7 @@ export const BackIcon = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      d="M16.243 6.343 14.828 4.93 7.758 12l7.07 7.071 1.415-1.414L10.586 12l5.657-5.657Z"
+      d="M20.328 11v2H7.5l3.243 3.243-1.415 1.414L3.672 12l5.656-5.657 1.415 1.414L7.5 11h12.828Z"
       fill="currentColor"
       stroke="none"
     />
