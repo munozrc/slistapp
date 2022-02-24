@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom'
 import { registerSW } from 'virtual:pwa-register'
 
-import { UIContextProvider } from './app/contexts'
-import { View } from './app/components'
+import { UIContextProvider, VIEWS } from './app/contexts'
+import { View } from './components'
 import { ListProducts } from './list'
 import { Product } from './product'
 
@@ -10,8 +10,8 @@ import './main.css'
 
 ReactDOM.render(
   <UIContextProvider>
-    <View view='HOME' component={<ListProducts />}/>
-    <View view='ADD_PRODUCT' component={<Product />}/>
+    <View view={VIEWS.HOME} component={<ListProducts />}/>
+    <View view={VIEWS.ADD_PRODUCT} component={<Product />}/>
   </UIContextProvider>,
   document.getElementById('root')
 )

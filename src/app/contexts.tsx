@@ -1,8 +1,8 @@
 import { createContext, Dispatch, FC, SetStateAction, useState } from 'react'
 
 export enum VIEWS {
-  HOME = 'HOME',
-  ADD_PRODUCT = 'ADD_PRODUCT'
+  HOME,
+  ADD_PRODUCT
 }
 
 interface UI {

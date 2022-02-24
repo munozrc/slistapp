@@ -1,9 +1,10 @@
 import { ReactElement } from 'react'
 
-import { useView } from './hooks'
+import { VIEWS } from '../../app/contexts'
+import { useView } from '../../app/hooks'
 
 interface ViewProps {
-  view: string
+  view: VIEWS
   component: ReactElement
 }
 
