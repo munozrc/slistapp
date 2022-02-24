@@ -1,18 +1,18 @@
 import ReactDOM from 'react-dom'
-import { StrictMode } from 'react'
 import { registerSW } from 'virtual:pwa-register'
 
-import { App } from './app'
 import { UIContextProvider } from './contexts/UIContext'
+import { View } from './components/View'
+import { ListProducts } from './list'
+import { Product } from './product'
 
 import './main.css'
 
 ReactDOM.render(
-  <StrictMode>
-    <UIContextProvider>
-      <App />
-    </UIContextProvider>
-  </StrictMode>,
+  <UIContextProvider>
+    <View view='HOME' component={<ListProducts />}/>
+    <View view='ADD_PRODUCT' component={<Product />}/>
+  </UIContextProvider>,
   document.getElementById('root')
 )
 
