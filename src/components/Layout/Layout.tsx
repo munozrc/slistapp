@@ -1,22 +1,24 @@
 import { ReactNode } from 'react'
 
 import { Button } from '../Button'
-import { SettingsIcon } from '../Icons'
+import { BackIcon, SettingsIcon } from '../Icons'
 
 import styles from './Layout.module.css'
 
 interface LayoutProps {
+  align?: 'start' | 'end'
   title: string
+  handleClick?: () => void
   children: ReactNode
 }
 
-export const Layout = ({ title, children }: LayoutProps) => {
+export const Layout = ({ align = 'end', title, handleClick, children }: LayoutProps) => {
   return (
     <main className={styles.container}>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${align === 'start' ? styles.start : ''}`}>
         <h2>{title}</h2>
-        <Button>
-          <SettingsIcon />
+        <Button onClick={handleClick}>
+          {align === 'start' ? <BackIcon /> : <SettingsIcon />}
         </Button>
       </header>
       <div className={styles.wrapper}>
