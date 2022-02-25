@@ -36,8 +36,6 @@ export const useProduct = (): returnType => {
 
     target.name.value = ''
     target.price.value = ''
-
-    console.log({ product })
   }
 
   return { products, addProduct }
