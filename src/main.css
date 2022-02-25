@@ -53,6 +53,21 @@ button {
   background: transparent;
 }
 
+input {
+  background: none;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 8px;
+  margin-top: 50px;
+}
+
 @media only screen and (max-width: 700px) {
 
   body {
@@ -65,6 +80,7 @@ button {
     box-shadow: none;
     height: 100%;
     max-width: none;
+    overflow: visible;
   }
 
 }
