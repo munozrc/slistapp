@@ -2,6 +2,19 @@
   display: flex;
 }
 
+.primary {
+  align-items: center;
+  background-color: #5D8BF4;
+  border-radius: 100px;
+  color: #DFF6FF;
+  font-size: 1.1em;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1;
+  padding: 16px 12px;
+  width: 100%;
+}
+
 .flat {
   align-items: center;
   justify-content: center;
