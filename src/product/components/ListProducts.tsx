@@ -15,7 +15,7 @@ export const ListProducts = () => {
         <PlusIcon />
       </button>
       {
-        products.map(({ id, name }) => (
+        products.reverse().map(({ id, name }) => (
           <button key={id} className={styles.listItemContainer}>
             <h4>{name}</h4>
           </button>
